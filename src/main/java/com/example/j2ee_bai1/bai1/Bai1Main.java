@@ -52,6 +52,6 @@ public class Bai1Main {
                     listBooks.forEach(Book::outPut);
                 }
             }
-        } while (chon != 8);
+        } while (chon !=0);
     }
 }
