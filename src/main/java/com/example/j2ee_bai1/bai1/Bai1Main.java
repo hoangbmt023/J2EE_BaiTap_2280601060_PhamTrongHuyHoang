@@ -51,6 +51,20 @@ public class Bai1Main {
                             .filter(u -> u.getTitle().toLowerCase().contains("lập trình")).toList();
                     listBooks.forEach(Book::outPut);
                 }
+                case 6 -> {
+                    System.out.print("Nhập giá sách cần tìm: ");
+                    long price = Long.parseLong(scanner.nextLine());
+                    List<Book> listBooks = listBook.stream()
+                            .filter(u -> u.getPrice() == price).toList();
+                    listBooks.forEach(Book::outPut);
+                }
+                case 7 -> {
+                    System.out.print("Nhập tác giả cần tìm: ");
+                    String author = scanner.nextLine();
+                    List<Book> listBooks = listBook.stream()
+                            .filter(u -> u.getAuthor().toLowerCase().contains(author.toLowerCase())).toList();
+                    listBooks.forEach(Book::outPut);
+                }
             }
         } while (chon !=0);
     }
