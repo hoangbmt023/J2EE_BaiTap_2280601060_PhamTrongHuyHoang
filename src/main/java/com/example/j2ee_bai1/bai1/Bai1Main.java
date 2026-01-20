@@ -66,6 +66,6 @@ public class Bai1Main {
                     listBooks.forEach(Book::outPut);
                 }
             }
-        } while (chon !=0);
+        } while (chon !=8);
     }
 }
